@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Kanal;
+    src: url(fonts/17722.otf);
+   }
+
+   @font-face {
+       font-family: Astroneer;
+       src: url(fonts/17885.ttf);
+      }
+
+      @font-face {
+          font-family: Mitels;
+          src: url(fonts/17873.ttf);
+         }
+
+body {
+  background-color: #4E6680;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.flex-c{
+  display: flex;
+  flex-direction: column;
+      margin-left: 20%;
+      margin-right:20%;
+
+
+
+}
+
+.flex-r{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.bg-top-header {
+    background-color: #65BAAF;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top:40px;
+   margin-top: -20px;
+
+
+}
+
+.top-header {
+  text-align: center;
+  font-size: 60px;
+  font-family: Kanal;
+  color: #EDECF1;
+max-width: 800px;
+ min-width: 10px;
+
+
+}
+
+.top-header-under {
+  font-size: 30px;
+  font-family: Kanal;
+  color: #EDECF1;
+  margin-top: 10px;
+  padding-bottom: 35px;
+
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #EDECF1;
+  padding-bottom:80px;
+
+}
+
+.menu-flex {
+  display: flex;
+  flex-direction: row;
+  background-color: #29A487;
+  justify-content: center;
+
+
+
+
+
+}
+
+.main-menu {
+ font-family: Astroneer;
+ font-size: 22px;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ padding-top:20px;
+ padding-bottom: 15px;
+
+   transition: 0.5s;
+
+   min-height: 50px;
+
+
+
+
+}
+
+.main-menu-division {
+  border: black solid 1px;
+ font-family: Astroneer;
+ font-size: 22px;
+
+   transition: 0.5s;
+   width: 100%;
+   height: 100%;
+
+
+}
+
+.main-menu:hover {
+  font-size: 22px;
+  color: #EDECF1;
+  transition: 0.5s;
+}
+
+.content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.main-header {
+  font-size: 70px;
+  font-family: Kanal;
+  color: #000000;
+  padding-bottom: 40px;
+  padding-top: 30px;
+
+}
+
+.objects {
+  display: flex;
+  flex-direction: column;
+
+}
+.objects-2 {
+  display: flex;
+  flex-direction: column;
+    text-align: center;
+
+}
+
+.objects-list {
+  justify-content: center;
+  font-size:25px;
+ transition: 0.5s;
+ font-family: Mitels;
+}
+
+.objects-list:hover {
+ color:#29A487;
+ transition: 0.5s;
+}
+
+.compData {
+  padding-top:5px;
+  font-family: Astroneer;
+  align-self: center;
+  color:#EDECF1;
+
+}
+
+.compDataEnter {
+  margin-top:400px;
+  font-family: Astroneer;
+  align-self: center;
+  color:#EDECF1;
+
+}
+
+.logBttn {
+
+  align-self: center;
+  margin-top: 200px;
+  background-color: #65BAAF;
+  border-radius: 20px;
+}
+
+.logBttnTxt {
+  align-self: center;
+  font-family: Astroneer;
+  font-size: 60px;
+  padding: 10px;
+  padding-bottom: 15px;
+
+}
+
+
+.logBttnTxt:hover {
+   font-size: 70px;
+   color:#EDECF1;
+   transition:1s;
+}
+
+.powered {
+  color: #4E6680;
+}
