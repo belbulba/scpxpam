@@ -14,7 +14,8 @@
          }
 
 body {
-  background-color: #4E6680;
+  background: #4E6680 url(objects/img/bg2.jpg) repeat-y;
+
 }
 
 a {

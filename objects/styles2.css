@@ -13,8 +13,8 @@
           src: url(fonts/17873.ttf);
          }
 
-body {
-  background-color: #4E6680;
+         body {
+           background: #4E6680 url(img/bg2.jpg) repeat-y;
 }
 
 a {
