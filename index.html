@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="styles.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>Храм SCP Foundation</title>
-    <script type="text/javascript" src="//cdn.qform24.com/forms.js"  charset="utf-8"></script>
-  </head>
-  <body>
-<div class="flex-c">
-      <div class="bg-top-header">
-      <div class="top-header">
-       Secure. Contain. Protect.
+
+<head>
+  <title>SCP Xpam Foundation</title>
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <script>
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function() {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="container-fluid bgIMG1">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex justify-content-center align-items-center logoContainer wow bounceInDown" data-wow-duration="1s">
+              <img class="logoSCP" src="images/SCPlogo.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center wow bounceInLeft" data-wow-duration="1s">
+              <p>SCP Foundation <br></p>
+            </div>
+            <div class="col-12 d-flex justify-content-center wow bounceInRight" data-wow-duration="1s">
+              <p style="font-size:6vh;transform:translateY(-30px);">XPAM Edition<br></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center mouseContainer">
+              <img class="mouseImage" src="images/mouse.gif" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="top-header-under">
-       Храм Edition
+    </div>
+
+    <div class="section" id="section1">
+      <div class="container-fluid bgIMG2">
+        <div class="container textColor">
+          <div class="row" style="margin-top:2vh;">
+            <div class="col-12 d-flex justify-content-center">
+              <p>Перейти в реестр фонда</p>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-                 <div class="main">
-                  <div class="menu-flex">
-                    <div class="main-menu">
-                          <a href="index.html">Библиотека</a>
-                    </div>
+    </div>
 
-                    <div class="main-menu">
-                      <a href="back.html">Обратная связь</a>
-                    </div>
-
-                    <div class="main-menu">
-                      <a href="info.html">О фонде</a>
-                    </div>
-                  </div>
-                          <div class="content">
-                                <div class="main-header">
-                                  Объекты
-                                </div>
-                                <div class="objects">
-                                  <div class="objects-list">
-                                    <a href="objects/1.html">SCP 0 - Дементий</a>
-                                 </div>
-                                   <div class="objects-list">
-                                     <a href="objects/1.html">SCP 1 - Скверная Артёмия</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="objects/2.html">SCP 2 - Ортём</a>
-                                  </div>
-                                 <!-- <div class="objects-list">
-                                     <a href="objects/3.html">SCP 3 - Дементий</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="objects/4.html">SCP 4 - Cкверная мелодия</a>
-                                  </div> -->
-                                  <div class="objects-list">
-                                     <a href="objects/5.html">SCP 5 -  Раздор</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="objects/97.html">SCP 97 -  Костыль</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="objects/306.html">SCP 306 -  Дрожащий постельный комплект</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="objects/913.html">SCP 913 -  Преследующее владельца кровавое пятно</a>
-                                  </div>
-                                </div>
-
-                                <div class="main-header" style="margin-top:50px">
-                                  Информация
-                                </div>
-                                <div class="objects-2">
-                                  <div class="objects-list" >
-                                     <a href="access.html">Уровни допуска</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="classes.html">Классы объектов</a>
-                                  </div>
-                                  <div class="objects-list">
-                                     <a href="staff.html" >Список сотрудников</a>
-                                  </div>
+    <div class="section" id="section2">
+      <div class="container-fluid bgIMG3"></div>
+    </div>
 
 
-                                </div>
-                          </div>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage('#fullpage', {
 
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 
-                 </div>
-                 <div class="compData">
-                   SECURE.CONTAIN.PROTECT XPAM CEO INC.
-                 </div>
-</div>
-  </body>
 </html>

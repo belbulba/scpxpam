@@ -1,0 +1,643 @@
+@font-face {
+  font-family: 'Kanal';
+  src: url('../fonts/17722.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Astroneer';
+  src: url('../fonts/17885.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mitels';
+  src: url('../fonts/17873.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mario';
+  src: url('../fonts/MarioBrosDScopy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: #F3F7F0;
+  font-size: 9vh;
+  font-family: Kanal;
+  text-align: center;
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #212121;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: white;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.5s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.textColor {
+  color:#212121;
+  font-family: Mitels;
+  font-size: 6vh;
+}
+
+.bgIMG1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  height: 100vh;
+}
+
+.bgIMG2 {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0vh;
+  background-color: #CCA749;
+  height: 100vh;
+}
+
+.bgIMG3 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #BAC7BE;
+  height: 100vh;
+}
+
+.bgIMG4 {
+  z-index: -2;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0vh;
+  background-image: url(../images/bgIMG4.png);
+  width: 100vw;
+}
+
+.logoSCP {
+  height: 40vh;
+}
+
+.logoContainer {
+  height: 60vh;
+}
+
+.topIco1 {
+  height: 11vh;
+  animation: icoAnim1 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  top: -100px;
+  transform: rotate(230deg);
+}
+
+@keyframes icoAnim1 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.topIco2 {
+  height: 11vh;
+  animation: icoAnim2 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
+  top: -100px;
+  transform: rotate(230deg);
+}
+
+@keyframes icoAnim2 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.topIco3 {
+  height: 11vh;
+  animation: icoAnim3 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  top: -100px;
+  transform: rotate(230deg);
+}
+
+@keyframes icoAnim3 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.topIco4 {
+  height: 11vh;
+  animation: icoAnim4 0.45s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
+  transform: rotate(230deg);
+  top: -100px;
+}
+
+@keyframes icoAnim4 {
+  from {
+    top: -100px;
+    transform: rotate(230deg);
+  }
+
+  to {
+    top: 0px;
+    transform: rotate(360deg);
+  }
+}
+
+.iconsIMG {
+  height: 10vh;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.iconsIMG:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+  transition: 0.5s;
+  -webkit-filter: drop-shadow(0 0 20px MediumOrchid);
+  filter: drop-shadow(0 0 20px MediumOrchid);
+}
+
+.test {
+  border: pink 2px solid;
+}
+
+.logo {
+  animation: logoAnimShadow 3s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  height: 44vh;
+}
+
+.contLogo {
+  height: 45vh;
+  animation: logoAnim 1s ease-out;
+  animation-fill-mode: forwards;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+@keyframes logoAnimShadow {
+  0% {
+    -webkit-filter: drop-shadow(0 0 15px #A252C3);
+    filter: drop-shadow(0 0 15px #A252C3);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 35px #A252C3);
+    filter: drop-shadow(0 0 35px #A252C3);
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0 0 15px #A252C3);
+    filter: drop-shadow(0 0 15px #A252C3);
+  }
+}
+
+@keyframes logoAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  animation: titleAnim 1.3s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  height: 25vh;
+}
+
+.contTitle {
+  height: 26vh;
+}
+
+@keyframes titleAnim {
+  from {
+    opacity: 0;
+    bottom: -200px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mainFont {
+  font-family: Mario;
+  font-size: 30px;
+}
+
+.downarrow {
+  padding-left: 200px;
+}
+
+.upperarrow {
+  margin-right: 110px;
+}
+
+.mouseImage {
+  animation: anim 3s ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  height: 13vh;
+}
+
+.mouseContainer {
+  height: 18vh;
+}
+
+.arrowsContainer {
+  height: 23vh;
+  ;
+}
+
+.arrowImageUp {
+  width: 10vw;
+  transform: rotate(-15deg);
+}
+
+.arrowImageDown {
+  width: 10vw;
+  transform: rotate(-15deg);
+}
+
+.galleryContainer {
+  width: 70vw;
+}
+
+.galleryImage {
+  width: 20vw;
+  transition: 0.5s;
+  transform: rotate(0deg);
+}
+
+.galleryImage:hover {
+  width: 20.5vw;
+  transition: 0.5s;
+  transform: rotate(-5deg);
+}
+
+.galleryImageXS {
+  height: 33vh;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+.galleryImageXS:hover {
+  height: 33.5vh;
+  transform: rotate(-5deg);
+  transition: 0.5s;
+}
+
+.secondTextImage {
+  width: 24vw;
+}
+
+.secondTextImageXS {
+  height: 33vh;
+}
+
+@media (max-width:1200px) {
+  .displayNone {
+    display: none;
+  }
+}
+
+@media (min-width:1200px) {
+  .dontDisplay {
+    display: none;
+  }
+}
+
+.bulbaImage {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 60vh;
+  -webkit-filter: drop-shadow(0 0 0 white);
+  filter: drop-shadow(0 0 0 white);
+}
+
+.bulbaImageXS {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 40vh;
+  -webkit-filter: drop-shadow(0 0 0 white);
+  filter: drop-shadow(0 0 0 white);
+}
+
+@keyframes bulbaAnim {
+  0% {
+    -webkit-filter: drop-shadow(0 0 0 white);
+    filter: drop-shadow(0 0 0 white);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 25px #8F17A5);
+    filter: drop-shadow(0 0 25px #8F17A5);
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0 0 0 white);
+    filter: drop-shadow(0 0 0 white);
+  }
+}
+
+.bulbaContainer {
+  height: 55vh;
+}
+
+.bulbaTextContainer {
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.mainFontBulba {
+  font-family: Mario;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mainFontBulbaXS {
+  font-family: Mario;
+  font-size: 23px;
+  text-align: center;
+}
+
+.backContainer {
+  height: 18vh;
+}
+
+.backImage {
+  width: 20vh;
+  padding: 3vh 0 3vh 0;
+  transition: 0.5s;
+}
+
+.backImage:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.backImageXS {
+  height: 18vh;
+  padding: 3vh 0 3vh 0;
+  transition: 0.5s;
+}
+
+.backImageXS:hover {
+  transform: scale(1.1);
+  padding: 3vh 0 3vh 0;
+  transition: 0.5s;
+}
+
+.frameImage {
+  height: 60vh;
+  transition: 0.5s;
+}
+
+.frameImageXS {
+  height: 70vh;
+}
+
+.frameImage:hover {
+  -webkit-filter: drop-shadow(0 0 10px MediumOrchid);
+  filter: drop-shadow(0 0 10px MediumOrchid);
+  transition: 0.5s;
+}
+
+.frameImageXS:hover {
+  -webkit-filter: drop-shadow(0 0 10px MediumOrchid);
+  filter: drop-shadow(0 0 10px MediumOrchid);
+  transition: 0.5s;
+}
+
+.image1 {
+  background-image: url(../images/artwork1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 50vw;
+}
+
+.backArrowContainer {
+  height: 15vh;
+}
+
+.backArrow {
+  height: 10vh;
+  transition: 0.5s;
+}
+
+.backArrow:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.artworksFull {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 80vh;
+}
+
+.artworksFullSeries {
+  animation: bulbaAnim 4s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  height: 80vh;
+}
+
+.mainFontArtworks {
+  padding-top: 5vh;
+  font-family: Mario;
+  font-size: 60px;
+  text-shadow: 4px 4px 0 #8F17A5;
+  text-align: center;
+}
+
+.textInfoPadding {
+  padding-top: 5vh;
+  font-family: Mario;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.textInfoPaddingBlack {
+  padding-top: 5vh;
+  font-family: Mario;
+  font-size: 45px;
+  text-shadow: 6px 6px 0px black;
+  text-align: center;
+}
+
+.textInfo {
+  font-family: Mario;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 0 #8F17A5;
+}
+
+.endIcons {
+  transition: 0.5s;
+  -webkit-filter: drop-shadow(2px 2px 0 MediumOrchid);
+  filter: drop-shadow(2px 2px 0 MediumOrchid);
+}
+
+.endIcons:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  -webkit-filter: drop-shadow(2px 2px 15px MediumOrchid);
+  filter: drop-shadow(2px 2px 15px MediumOrchid);
+}
+
+.videoGalleryImage {
+  height: 60vh;
+  margin-top: 11vh;
+  transition: 0.5s;
+}
+
+.videoGalleryImage:hover {
+  transition: 0.5s;
+  -webkit-filter: drop-shadow(2px 2px 15px MediumOrchid);
+  filter: drop-shadow(2px 2px 15px MediumOrchid);
+}
+
+.mainFontVideo {
+  font-family: Mario;
+  font-size: 60px;
+  text-shadow: 4px 4px 0 #8F17A5;
+  text-align: center;
+}
